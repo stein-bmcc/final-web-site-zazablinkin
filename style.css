@@ -1,69 +1,107 @@
+/* Set up a colorful gradient background */
+body {
+    background: linear-gradient(to right, #ff7eb9, #ff65a3, #ff3f89, #ff007f);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+main {
+    padding: 25px;
+    /* text-align: center; */
+    max-width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fffb00;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ff007f;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff65a3;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.938);
+    font-size: 1em;
+}
 
 /* ADD @import statements ABOVE this line  */
 
-/*  ------------------------------------------------------
-    BASIC PAGE STYLING
-    Here you can set typography, colors and overall page styling
-    ------------------------------------------------------ */
-html{
-    font-size: 100%;
-}
-body{
-    /* Here you can set your default font-family, line-height 
-        You can also use max-width and auto margins to limit the width of the page content
-        If you set a background-color here it will be the site background color.
-    */
-
-}
-h1,h2,h3,h4,h5,h6{
-    /* Here you can set the font-family for your headings */
-
-}
-
-/*  ------------------------------------------------------
-    HYPERLINK STYLING 
-    Change the colors here to match the colors you want for your site.
-    ------------------------------------------------------ */ 
-a{
-    color: #1313f1;
-    text-decoration: none;
-    border-bottom: 1px solid #1313f1;
-}
-a:hover{
-    color: #0fa4df;
-    border-bottom: 3px solid #0fa4df;
-}
-a:visited{
-    color: #1313f1;
-    border-bottom: 1px solid #1313f1;
-}
 
 /*  ------------------------------------------------------
     NAVIGATION STYLING 
     This turns an unordered list in the nav element to a horizontal menu
     It also sets the color for the navigation.
     ------------------------------------------------------ */ 
-nav{
-    background-color: #fef6c6;
-    padding: 10px;
-}
-    nav ul{
-    margin: 0;
-    padding: 0;
-}
-nav li
-{
-    display: inline; /* brings nav elements up next to each other */
-    list-style-type: none; /* removes the bullet points */
-    padding-right: 20px; /* spaces them out from each other. Adjust to suit your needs */
-}
+    nav {
+        text-align: center;
+        padding: 20px;
+        background-color: #000000;
+        font-size: 20px;
+    }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
 /* Change this to whatever color you want your nav and visited nav links to be */
-nav li a{
-    color: #1313f1;
+nav a{
+    color: #ffffff;
     border-bottom: none;
 }
-nav li a:visited{
-    color: #1313f1;
+nav a:visited{
+    color: #ffffff;
     
 }
 
